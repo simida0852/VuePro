@@ -26,6 +26,7 @@
 </template>
 
 <script>
+import mockData from '../mock.js'
 
 let mateDate={
     a:1,
@@ -44,6 +45,10 @@ export default {
             show:false
         }
     },
+    mounted(){
+        console.log(mockData)
+    },
+
     methods: {
         handleClickAdd:function() {
             return this.one += 1
